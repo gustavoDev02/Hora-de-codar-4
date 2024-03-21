@@ -7,30 +7,22 @@
 </head>
 <body>
     <script>
-        // Array de frutas
         var frutas = ["Maçã", "Banana", "Morango", "Abacaxi", "Uva"];
 
-        // Exibe a lista de frutas ao usuário
         alert("Lista de frutas disponíveis: " + frutas.join(", "));
 
-        // Loop para remover frutas até que o array esteja vazio
         while (frutas.length > 0) {
-            // Solicita ao usuário para digitar uma fruta
             var fruta = prompt("Digite o nome de uma fruta para remover da lista:");
 
-            // Verifica se a fruta está na lista
             var indice = frutas.indexOf(fruta);
             if (indice !== -1) {
-                // Remove a fruta da lista
                 frutas.splice(indice, 1);
                 alert("Fruta foi retirada da lista.");
             } else {
-                // Se a fruta não estiver na lista, exibe uma mensagem de erro
                 alert("Fruta indisponível no nosso mercado.");
             }
         }
 
-        // Quando o array não possuir mais itens, exibe a mensagem de lista finalizada
         alert("Lista de compras finalizada.");
     </script>
 </body>
