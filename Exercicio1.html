@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio-1</title>
+    <script>
+
+        var texto = prompt(`Digite o aluno que deseja cadastrar:`);
+        var contAluno = 0;
+        var lista = [];
+        var parada = "PARE";
+
+        while(texto !== parada){
+            lista.push(texto);
+            contAluno++;
+            texto = prompt(`Digite o aluno que deseja cadastrar | digite "PARE" para parar o progrma:`);
+        }
+
+        document.write(`quantidade de alunos cadastrados: ${contAluno} <p>`);
+        document.write(`Lista de alunos <P> ${lista.join("<P>")}`)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
